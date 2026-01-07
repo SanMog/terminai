@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  terminai-test:
+    build:
+      context: ..
+      dockerfile: tests/Dockerfile
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ..:/app
+    stdin_open: true
+    tty: true
+    command: /bin/bash

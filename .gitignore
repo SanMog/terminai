@@ -1,0 +1,17 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables (СЕКРЕТЫ!)
+.env
+
+# IDE settings
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
